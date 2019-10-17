@@ -3,7 +3,7 @@ import {
   REMOVE_COMMENT
 } from './actions';
 
-function comments(state = [], action) {
+export function comments(state = [], action) {
   switch (action.type) {
     case ADD_COMMENT:
       return [{
@@ -20,3 +20,4 @@ function comments(state = [], action) {
       return state;
   }
 }
+
